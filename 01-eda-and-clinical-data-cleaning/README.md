@@ -59,3 +59,26 @@ Para ejecutar los notebooks de este proyecto, se requiere Python 3.x y las sigui
 
 ```bash
 pip install pandas numpy matplotlib seaborn plotly scipy statsmodels scikit-learn
+
+
+## 📊 Práctico I: Análisis Exploratorio, Calidad de Datos e Inferencia (CODIES I)
+
+Este módulo aborda el ciclo completo de curación, análisis exploratorio (EDA) y modelado inicial sobre la base epidemiológica **CODIES I** (Córdoba).
+
+### 🎯 Objetivos y Alcance
+- **Unidad de Observación:** Individuos adultos (>=18 años) participantes del estudio epidemiológico CODIES I.
+- **Limpieza y Calidad de Datos:** Identificación de duplicados por ID, unificación de unidades de medida (estatura en metros), recodificación de inconsistencias en variables cualitativas y tratamiento de valores atípicos.
+- **Ingeniería de Características:** Generación de variables categóricas clínicas (`edad_cat` y `colesterol_cat`).
+- **Tratamiento de Missing Data:** Diagnóstico de valores nulos y análisis comparativo de impacto pre/post imputación por mediana en perfiles lipídicos.
+
+### 📈 Metodología y Pruebas Estadísticas Aplicadas
+1. **Análisis Descriptivo (EDA):** Caracterización de variables continuas (Media, Mediana, DE, IQR) y cualitativas (distribuciones de frecuencia y gráficos de proporciones).
+2. **Evaluación de Inconsistencias:** Depuración de errores de carga (ej. corrección del valor anómalo `sexo=10` e hipercolesterolemia).
+3. **Pruebas de Hipótesis e Inferencia:**
+   - **Test Chi-Cuadrado ($\chi^2$):** Evaluación de independencia entre `sexo` y prevalencia de `diabetes`.
+   - **$t$-Test / Mann-Whitney:** Comparación de promedios de `edad` según presencia/ausencia de `diabetes`.
+   - **Correlación de Pearson y Spearman:** Evaluación de la asociación lineal y monótona entre `edad` y `colesterol`.
+4. **Modelado Clásico:** Regresión Logística Múltiple para evaluar el riesgo de Diabetes (`dbt`), estimando Odds Ratios (OR) e Intervalos de Confianza (95%).
+
+### 🛠️ Estructura del Archivo
+- `Resolucion Practico I.ipynb`: Notebook ejecutable de Python con todo el pipeline de análisis, gráficos explicativos e interpretación clínica de p-valores y coeficientes.

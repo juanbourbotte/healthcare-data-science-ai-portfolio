@@ -53,13 +53,26 @@ Al finalizar esta primera parte, podrás:
 * Procesamiento y estructuración de notas clínicas narrativas.
 * Categorización y extracción de *insights* a partir de respuestas abiertas en encuestas de pacientes y personal de salud.
 
----
 
-## Estructura del Material
 
-* `presentacion_modulo5_parte1.pptx` *(actualizar con nombre exacto)*: Diapositivas teóricas con los conceptos clave, diagramas de flujo y ejemplos visuales.
-* `notebook_modulo5_parte1.ipynb` *(actualizar con nombre exacto)*: Cuaderno interactivo en Python con ejemplos guiados paso a paso sobre textos clínicos y encuestas.
-* `data/` *(si aplica)*: Conjunto de datos de prueba utilizados en las prácticas.
+## 🧠 Parte II: Modelos Neuronales, Embeddings y Similaridad Semántica
+
+En esta segunda etapa damos el salto de las representaciones dispersas (*sparse* como BoW o TF-IDF) a **representaciones vectoriales densas (*Embeddings*)** mediante arquitecturas basadas en **Transformers**. El objetivo es capturar el contexto y el significado semántico real de los textos, superando las limitaciones del análisis léxico tradicional.
+
+### 🚀 ¿Qué incluye el pipeline?
+* **Generación de Embeddings Multilingües:** Implementación de `sentence-transformers` utilizando el modelo preentrenado `paraphrase-multilingual-MiniLM-L12-v2` (384 dimensiones) optimizado para español, ejecutándose 100% en local/Colab sin necesidad de API Keys.
+* **Reducción de Dimensionalidad y Visualización:** Proyección del espacio vectorial de 384D a 2D mediante **PCA (Principal Component Analysis)** para visualizar cómo las oraciones se agrupan por cercanía temática y semántica.
+* **Cálculo de Similaridad Semántica:** Implementación de **Similitud Coseno** para cuantificar la relación conceptual entre textos (base fundamental para motores de búsqueda semántica, sistemas de recomendación y arquitecturas RAG).
+
+### 🛠️ Stack Tecnológico
+`Python` • `Hugging Face Transformers` • `Sentence-Transformers` • `PyTorch` • `Scikit-Learn` • `NumPy` • `Matplotlib`
+
+
+### 📂 Archivos
+* `PLN_pretrained_NRmodels.ipynb`: Código ejecutable paso a paso con ejemplos prácticos y visualizaciones.
+* `ML_clinical_histories_classificator.ipynb`: Código ejecutable paso a paso con modelo machine learning para clasificar historicas clinicas de pacientes
+* `Preprocessing_classificator_RE.ipynb`: Código ejecutable para pre-procesamiento de lenguaje crudo y raw data previo a modelizar
+
 
 ---
 

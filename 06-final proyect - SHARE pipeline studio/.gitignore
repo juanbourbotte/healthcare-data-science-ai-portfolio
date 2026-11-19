@@ -1,0 +1,15 @@
+.venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.DS_Store
+.vscode/
+.env
+
+# SHARE data and participant-level derivatives: never commit by default
+data/*
+!data/.gitkeep
+
+# Local analysis outputs may contain row-level or restricted information
+outputs/*
+!outputs/.gitkeep

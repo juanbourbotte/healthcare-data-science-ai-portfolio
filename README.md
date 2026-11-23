@@ -17,7 +17,7 @@ El objetivo principal es aplicar técnicas cuantitativas avanzadas, Machine Lear
 
 ```text
 ├── 01-eda-and-clinical-data-cleaning/   # Curación, limpieza, EDA y ética de datos clínicos
-├── 02-predictive-modeling-biomedical/     # Machine Learning supervisado y no supervisado (Clustering/PCA)
-├── 03-medical-imaging-and-dl/             # Procesamiento DICOM y Redes Neuronales Convolucionales (CNN)
-├── 04-clinical-nlp-and-llms/              # Minería de texto clínico, spaCy, Embeddings y LLMs
-└── 05-capstone-health-ai-app/             # Proyecto Final: Aplicación interactiva end-to-end
+├── 02-03-predictive-modeling-biomedical/     # Machine Learning supervisado y no supervisado (Clustering/PCA)
+├── 04-medical-imaging-and-dl/             # Procesamiento DICOM y Redes Neuronales Convolucionales (CNN)
+├── 05-clinical-nlp-and-llms/              # Minería de texto clínico, spaCy, Embeddings y LLMs
+└── 06-capstone-health-ai-app/             # Proyecto Final: Aplicación interactiva end-to-end

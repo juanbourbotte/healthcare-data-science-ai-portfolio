@@ -1,8 +1,7 @@
 # 🏥 Healthcare Data Science & AI Portfolio
 
 **Autor:** Juan Manuel Bourbotte Asensio, Ph.D.  
-**Contacto:** [LinkedIn Profile](https://www.linkedin.com/in/juanbourbotte) | 
-[Email](juanmbs2@gmail.com)
+**Contacto:** https://www.linkedin.com/in/juanbourbotte | juanmbs2@gmail.com
 
 ---
 
